@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Band-off</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+<img src="images/bracket.png" style="position: absolute; top: 59px; left: 0px;">
+
+<img src="images/the-beatles.png" width="120" height="28" style="position: absolute; left: 30px; top: 45px; cursor: pointer;" ng-click="sra='the-beatles.png'">
+<img src="images/slayer.png" width="120" height="28" style="position: absolute; left: 30px; top: 73px; cursor: pointer;" ng-click="sra='slayer.png'">
+<img src="images/black-sabbath.png" width="120" height="28" style="position: absolute; left: 30px; top: 101px; cursor: pointer;" ng-click="srp='black-sabbath.png'">
+<img src="images/oasis.png" width="120" height="28" style="position: absolute; left: 30px; top: 129px; cursor: pointer;" ng-click="srp='oasis.png'">
+<img src="images/iron-maiden.png" width="120" height="28" style="position: absolute; left: 30px; top: 157px; cursor: pointer;" ng-click="srg='iron-maiden.png'">
+<img src="images/the-who.png" width="120" height="28" style="position: absolute; left: 30px; top: 185px; cursor: pointer;" ng-click="srg='the-who.png'">
+<img src="images/ramones.png" width="120" height="28" style="position: absolute; left: 30px; top: 213px; cursor: pointer;" ng-click="srj='ramones.png'">
+<img src="images/the-offspring.png" width="120" height="28" style="position: absolute; left: 30px; top: 241px; cursor: pointer;" ng-click="srj='the-offspring.png'">
+<img src="images/pink-floyd.png" width="120" height="28" style="position: absolute; left: 30px; top: 269px; cursor: pointer;" ng-click="srd='pink-floyd.png'">
+<img src="images/motorhead.png" width="120" height="28" style="position: absolute; left: 30px; top: 297px; cursor: pointer;" ng-click="srd='motorhead.png'">
+<img src="images/bon-jovi.png" width="120" height="28" style="position: absolute; left: 30px; top: 325px; cursor: pointer;" ng-click="srm='bon-jovi.png'">
+<img src="images/nirvana.png" width="120" height="28" style="position: absolute; left: 30px; top: 353px; cursor: pointer;" ng-click="srm='nirvana.png'">
+<img src="images/acdc.png" width="120" height="28" style="position: absolute; left: 30px; top: 381px; cursor: pointer;" ng-click="sre='acdc.png'">
+<img src="images/blink-182.png" width="120" height="28" style="position: absolute; left: 30px; top: 409px; cursor: pointer;" ng-click="sre='blink-182.png'">
+<img src="images/aerosmith.png" width="120" height="28" style="position: absolute; left: 30px; top: 437px; cursor: pointer;" ng-click="srl='aerosmith.png'">
+<img src="images/system-of-a-down.png" width="120" height="28" style="position: absolute; left: 30px; top: 465px; cursor: pointer;" ng-click="srl='system-of-a-down.png'">
+<img src="images/led-zeppelin.png" width="120" height="28" style="position: absolute; left: 30px; top: 506px; cursor: pointer;" ng-click="srb='led-zeppelin.png'">
+<img src="images/audioslave.png" width="120" height="28" style="position: absolute; left: 30px; top: 534px; cursor: pointer;" ng-click="srb='audioslave.png'">
+<img src="images/guns-n-roses.png" width="120" height="28" style="position: absolute; left: 30px; top: 562px; cursor: pointer;" ng-click="sro='guns-n-roses.png'">
+<img src="images/rhcp.png" width="120" height="28" style="position: absolute; left: 30px; top: 590px; cursor: pointer;" ng-click="sro='rhcp.png'">
+<img src="images/rolling-stones.png" width="120" height="28" style="position: absolute; left: 30px; top: 618px; cursor: pointer;" ng-click="srh='rolling-stones.png'">
+<img src="images/kiss.png" width="120" height="28" style="position: absolute; left: 30px; top: 646px;" ng-click="srh='kiss.png'">
+<img src="images/metallica.png" width="120" height="28" style="position: absolute; left: 30px; top: 674px; cursor: pointer;" ng-click="sri='metallica.png'">
+<img src="images/pearl-jam.png" width="120" height="28" style="position: absolute; left: 30px; top: 702px; cursor: pointer;" ng-click="sri='pearl-jam.png'">
+<img src="images/queen.png" width="120" height="28" style="position: absolute; left: 30px; top: 730px; cursor: pointer;" ng-click="src='queen.png'">
+<img src="images/queens-of-the-stone-age.png" width="120" height="28" style="position: absolute; left: 30px; top: 758px; cursor: pointer;" ng-click="src='queens-of-the-stone-age.png'">
+<img src="images/linkin-park.png" width="120" height="28" style="position: absolute; left: 30px; top: 786px; cursor: pointer;" ng-click="srn='linkin-park.png'">
+<img src="images/the-doors.png" width="120" height="28" style="position: absolute; left: 30px; top: 814px; cursor: pointer;" ng-click="srn='the-doors.png'">
+<img src="images/u2.png" width="120" height="28" style="position: absolute; left: 30px; top: 842px; cursor: pointer;" ng-click="srf='u2.png'">
+<img src="images/foo-fighters.png" width="120" height="28" style="position: absolute; left: 30px; top: 870px; cursor: pointer;" ng-click="srf='foo-fighters.png'">
+<img src="images/greenday.png" width="120" height="28" style="position: absolute; left: 30px; top: 898px; cursor: pointer;" ng-click="srk='greenday.png'">
+<img src="images/megadeth.png" width="120" height="28" style="position: absolute; left: 30px; top: 926px; cursor: pointer;" ng-click="srk='megadeth.png'">
+
+<img ng-src="images/{{sra}}" width="120" height="42" style="position: absolute; left: 195px; top: 40px; cursor: pointer;" ng-click="qf1=sra">
+<img ng-src="images/{{srp}}" width="120" height="42" style="position: absolute; left: 195px; top: 96px; cursor: pointer;" ng-click="qf1=srp">
+<img ng-src="images/{{srg}}" width="120" height="42" style="position: absolute; left: 195px; top: 152px; cursor: pointer;" ng-click="qf8=srg">
+<img ng-src="images/{{srj}}" width="120" height="42" style="position: absolute; left: 195px; top: 208px; cursor: pointer;" ng-click="qf8=srj">
+<img ng-src="images/{{srd}}" width="120" height="42" style="position: absolute; left: 195px; top: 264px; cursor: pointer;" ng-click="qf4=srd">
+<img ng-src="images/{{srm}}" width="120" height="42" style="position: absolute; left: 195px; top: 320px; cursor: pointer;" ng-click="qf4=srm">
+<img ng-src="images/{{sre}}" width="120" height="42" style="position: absolute; left: 195px; top: 376px; cursor: pointer;" ng-click="qf5=sre">
+<img ng-src="images/{{srl}}" width="120" height="42" style="position: absolute; left: 195px; top: 432px; cursor: pointer;" ng-click="qf5=srl">
+<img ng-src="images/{{srb}}" width="120" height="42" style="position: absolute; left: 195px; top: 501px; cursor: pointer;" ng-click="qf2=srb">
+<img ng-src="images/{{sro}}" width="120" height="42" style="position: absolute; left: 195px; top: 557px; cursor: pointer;" ng-click="qf2=sro">
+<img ng-src="images/{{srh}}" width="120" height="42" style="position: absolute; left: 195px; top: 613px; cursor: pointer;" ng-click="qf7=srh">
+<img ng-src="images/{{sri}}" width="120" height="42" style="position: absolute; left: 195px; top: 669px; cursor: pointer;" ng-click="qf7=sri">
+<img ng-src="images/{{src}}" width="120" height="42" style="position: absolute; left: 195px; top: 725px; cursor: pointer;" ng-click="qf3=src">
+<img ng-src="images/{{srn}}" width="120" height="42" style="position: absolute; left: 195px; top: 781px; cursor: pointer;" ng-click="qf3=srn">
+<img ng-src="images/{{srf}}" width="120" height="42" style="position: absolute; left: 195px; top: 837px; cursor: pointer;" ng-click="qf6=srf">
+<img ng-src="images/{{srk}}" width="120" height="42" style="position: absolute; left: 195px; top: 893px; cursor: pointer;" ng-click="qf6=srk">
+
+
+<img ng-src="images/{{qf1}}" width="160"  height="64" style="position: absolute; left: 360px; top: 42px; cursor: pointer;" ng-click="sfb=qf1">
+<img ng-src="images/{{qf8}}" width="160"  height="64" style="position: absolute; left: 360px; top: 154px; cursor: pointer;" ng-click="sfb=qf8">
+<img ng-src="images/{{qf4}}" width="160"  height="64" style="position: absolute; left: 360px; top: 266px; cursor: pointer;" ng-click="sfx=qf4">
+<img ng-src="images/{{qf5}}" width="160"  height="64" style="position: absolute; left: 360px; top: 378px; cursor: pointer;" ng-click="sfx=qf5">
+<img ng-src="images/{{qf2}}" width="160"  height="64" style="position: absolute; left: 360px; top: 503px; cursor: pointer;" ng-click="sft=qf2">
+<img ng-src="images/{{qf7}}" width="160"  height="64" style="position: absolute; left: 360px; top: 615px; cursor: pointer;" ng-click="sft=qf7">
+<img ng-src="images/{{qf3}}" width="160"  height="64" style="position: absolute; left: 360px; top: 727px; cursor: pointer;" ng-click="sfs=qf3">
+<img ng-src="images/{{qf6}}" width="160"  height="64" style="position: absolute; left: 360px; top: 839px; cursor: pointer;" ng-click="sfs=qf6">
+
+
+<img ng-src="images/{{sfb}}" width="200" height="80" style="position: absolute; left: 575px; top: 80px; cursor: pointer;" ng-click="f1=sfb">
+<img ng-src="images/{{sfx}}" width="200" height="80" style="position: absolute; left: 575px; top: 304px; cursor: pointer;" ng-click="f1=sfx">
+<img ng-src="images/{{sft}}" width="200" height="80" style="position: absolute; left: 575px; top: 541px; cursor: pointer;" ng-click="f2=sft">
+<img ng-src="images/{{sfs}}" width="200" height="80" style="position: absolute; left: 575px; top: 765px; cursor: pointer;" ng-click="f2=sfs">
+
+<img ng-src="images/{{f1}}" width="200"  height="80" style="position: absolute; left: 806px; top: 180px; cursor: pointer;" ng-click="champion=f1">
+<img ng-src="images/{{f2}}" width="200"  height="80" style="position: absolute; left: 806px; top: 656px; cursor: pointer;" ng-click="champion=f2">
+
+<img ng-src="images/{{ champion }}" width="200" style="position: absolute; left: 1040px; top: 390px;">
+
+
+{{ b1 }}
+
+
+
+
+</body>
+</html>
